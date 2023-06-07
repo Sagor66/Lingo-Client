@@ -11,7 +11,7 @@ import banner1 from "../../assets/Banner/banner1.jpg";
 import banner2 from "../../assets/Banner/banner2.jpg";
 import banner3 from "../../assets/Banner/banner3.jpg";
 import wave from "../../assets/Banner/wave_bottom.png";
-
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -26,8 +26,8 @@ const Banner = () => {
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
         // autoplay={{
-        //   delay: 3000, 
-        //   disableOnInteraction: false, 
+        //   delay: 3000,
+        //   disableOnInteraction: false,
         // }}
         className="mySwiper h-[900px]"
       >
@@ -94,6 +94,9 @@ const Banner = () => {
                 </span>{" "}
                 Curriculum
               </h1>
+              <Link className="flex justify-center mt-16" to="/signup">
+                <button className="btn-primary text-2xl rounded-3xl w-1/3 py-5 tracking-wider">Join Us</button>
+              </Link>
             </div>
             <div className="absolute bottom-0">
               <img src={wave} alt="" />

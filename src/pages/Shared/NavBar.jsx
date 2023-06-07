@@ -1,21 +1,20 @@
-import { FaLanguage } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import Logo from "../../components/Logo";
 
 const NavBar = () => {
   const navOptions = (
     <>
-      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
-        <Link to='/'>Home</Link>
+      <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
+        <Link to="/">Home</Link>
       </li>
-      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
-        <Link to='/'>Instructors</Link>
+      <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
+        <Link to="/">Instructors</Link>
       </li>
-      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
-        <Link to='/'>Classes</Link>
+      <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
+        <Link to="/">Classes</Link>
       </li>
-      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
-        <Link to='/'>Dashboard</Link>
+      <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
+        <Link to="/">Dashboard</Link>
       </li>
     </>
   );
@@ -48,19 +47,14 @@ const NavBar = () => {
               {navOptions}
             </ul>
           </div>
-          <Link to='/' className="font-nunito font-black text-4xl flex items-center gap-2">
-            Lingo
-            <FaLanguage className='text-6xl text-orange-400'></FaLanguage>
-            </Link>
+          <Logo></Logo>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            { navOptions }
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <Link to='/login'>
-            <button className='font-nunito text-xl font-extrabold rounded-full px-12 py-3 bg-gradient-to-b from-orange-500 to-yellow-500 text-white tracking-wide hover:from-orange-600 hover:to-yellow-600'>Login</button>
+          <Link to="/login">
+            <button className="btn-primary">Login</button>
           </Link>
         </div>
       </div>
