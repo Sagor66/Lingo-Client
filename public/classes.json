@@ -1,0 +1,282 @@
+[
+  {
+      "class_name": "Spanish Beginners",
+      "image": "https://example.com/spanish-beginners.jpg",
+      "instructor": "Maria Rodriguez",
+      "total_students": 20,
+      "available_seats": 5,
+      "price": 100
+  },
+  {
+      "class_name": "French Intermediate",
+      "image": "https://example.com/french-intermediate.jpg",
+      "instructor": "Ahmed Khan",
+      "total_students": 15,
+      "available_seats": 10,
+      "price": 120
+  },
+  {
+      "class_name": "German Advanced",
+      "image": "https://example.com/german-advanced.jpg",
+      "instructor": "Hans Müller",
+      "total_students": 12,
+      "available_seats": 3,
+      "price": 150
+  },
+  {
+      "class_name": "Italian Conversational",
+      "image": "https://example.com/italian-conversational.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 18,
+      "available_seats": 7,
+      "price": 110
+  },
+  {
+      "class_name": "Japanese Beginners",
+      "image": "https://example.com/japanese-beginners.jpg",
+      "instructor": "Miguel Hernandez",
+      "total_students": 25,
+      "available_seats": 0,
+      "price": 95
+  },
+  {
+      "class_name": "Spanish Advanced",
+      "image": "https://example.com/spanish-advanced.jpg",
+      "instructor": "Carlos Garcia",
+      "total_students": 10,
+      "available_seats": 5,
+      "price": 130
+  },
+  {
+      "class_name": "French Beginners",
+      "image": "https://example.com/french-beginners.jpg",
+      "instructor": "Ivan Petrov",
+      "total_students": 22,
+      "available_seats": 3,
+      "price": 105
+  },
+  {
+      "class_name": "Italian Intermediate",
+      "image": "https://example.com/italian-intermediate.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 16,
+      "available_seats": 9,
+      "price": 125
+  },
+  {
+      "class_name": "Chinese Beginners",
+      "image": "https://example.com/chinese-beginners.jpg",
+      "instructor": "Li Wei",
+      "total_students": 14,
+      "available_seats": 6,
+      "price": 90
+  },
+  {
+      "class_name": "German Conversational",
+      "image": "https://example.com/german-conversational.jpg",
+      "instructor": "Hans Müller",
+      "total_students": 10,
+      "available_seats": 10,
+      "price": 115
+  },
+  {
+      "class_name": "Japanese Intermediate",
+      "image": "https://example.com/japanese-intermediate.jpg",
+      "instructor": "Miguel Hernandez",
+      "total_students": 8,
+      "available_seats": 2,
+      "price": 135
+  },
+  {
+      "class_name": "Russian Beginners",
+      "image": "https://example.com/russian-beginners.jpg",
+      "instructor": "Ivan Petrov",
+      "total_students": 20,
+      "available_seats": 4,
+      "price": 100
+  },
+  {
+      "class_name": "Spanish Intermediate",
+      "image": "https://example.com/spanish-intermediate.jpg",
+      "instructor": "Carlos Garcia",
+      "total_students": 12,
+      "available_seats": 8,
+      "price": 120
+  },
+  {
+      "class_name": "French Advanced",
+      "image": "https://example.com/french-advanced.jpg",
+      "instructor": "Ivan Petrov",
+      "total_students": 15,
+      "available_seats": 5,
+      "price": 140
+  },
+  {
+      "class_name": "Italian Beginners",
+      "image": "https://example.com/italian-beginners.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 18,
+      "available_seats": 7,
+      "price": 95
+  },
+  {
+      "class_name": "Chinese Intermediate",
+      "image": "https://example.com/chinese-intermediate.jpg",
+      "instructor": "Li Wei",
+      "total_students": 10,
+      "available_seats": 5,
+      "price": 130
+  },
+  {
+      "class_name": "Spanish Conversational",
+      "image": "https://example.com/spanish-conversational.jpg",
+      "instructor": "Sophie Lefebvre",
+      "total_students": 12,
+      "available_seats": 4,
+      "price": 110
+  },
+  {
+      "class_name": "German Beginners",
+      "image": "https://example.com/german-beginners.jpg",
+      "instructor": "Anna Schmidt",
+      "total_students": 20,
+      "available_seats": 3,
+      "price": 120
+  },
+  {
+      "class_name": "French Conversational",
+      "image": "https://example.com/french-conversational.jpg",
+      "instructor": "Jean-Luc Dubois",
+      "total_students": 16,
+      "available_seats": 8,
+      "price": 100
+  },
+  {
+      "class_name": "Italian Advanced",
+      "image": "https://example.com/italian-advanced.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 10,
+      "available_seats": 2,
+      "price": 135
+  },
+  {
+      "class_name": "Japanese Advanced",
+      "image": "https://example.com/japanese-advanced.jpg",
+      "instructor": "Sophie Lefebvre",
+      "total_students": 22,
+      "available_seats": 6,
+      "price": 105
+  },
+  {
+      "class_name": "Arabic Intermediate",
+      "image": "https://example.com/spanish-intermediate.jpg",
+      "instructor": "Carlos Garcia",
+      "total_students": 18,
+      "available_seats": 9,
+      "price": 125
+  },
+  {
+      "class_name": "German Advanced",
+      "image": "https://example.com/german-advanced.jpg",
+      "instructor": "Anna Schmidt",
+      "total_students": 14,
+      "available_seats": 5,
+      "price": 90
+  },
+  {
+      "class_name": "French Beginners",
+      "image": "https://example.com/french-beginners.jpg",
+      "instructor": "Jean-Luc Dubois",
+      "total_students": 10,
+      "available_seats": 10,
+      "price": 115
+  },
+  {
+      "class_name": "Indian Intermediate",
+      "image": "https://example.com/italian-intermediate.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 8,
+      "available_seats": 2,
+      "price": 135
+  },
+  {
+      "class_name": "Nepali Beginners",
+      "image": "https://example.com/chinese-beginners.jpg",
+      "instructor": "Li Wei",
+      "total_students": 20,
+      "available_seats": 4,
+      "price": 100
+  },
+  {
+      "class_name": "Arabic Advanced",
+      "image": "https://example.com/spanish-advanced.jpg",
+      "instructor": "Carlos Garcia",
+      "total_students": 12,
+      "available_seats": 8,
+      "price": 120
+  },
+  {
+      "class_name": "Latin Conversational",
+      "image": "https://example.com/french-conversational.jpg",
+      "instructor": "Jean-Luc Dubois",
+      "total_students": 15,
+      "available_seats": 5,
+      "price": 140
+  },
+  {
+      "class_name": "Indian Beginners",
+      "image": "https://example.com/italian-beginners.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 18,
+      "available_seats": 7,
+      "price": 95
+  },
+  {
+      "class_name": "Nepali Intermediate",
+      "image": "https://example.com/chinese-intermediate.jpg",
+      "instructor": "Li Wei",
+      "total_students": 10,
+      "available_seats": 5,
+      "price": 130
+  },
+  {
+      "class_name": "Spanish Conversational",
+      "image": "https://example.com/spanish-conversational.jpg",
+      "instructor": "Elena Petrova",
+      "total_students": 12,
+      "available_seats": 4,
+      "price": 110
+  },
+  {
+      "class_name": "German Beginners",
+      "image": "https://example.com/german-beginners.jpg",
+      "instructor": "Hans Müller",
+      "total_students": 20,
+      "available_seats": 3,
+      "price": 120
+  },
+  {
+      "class_name": "French Conversational",
+      "image": "https://example.com/french-conversational.jpg",
+      "instructor": "Ahmed Khan",
+      "total_students": 16,
+      "available_seats": 8,
+      "price": 100
+  },
+  {
+      "class_name": "Indian Advanced",
+      "image": "https://example.com/italian-advanced.jpg",
+      "instructor": "Giulia Rossi",
+      "total_students": 10,
+      "available_seats": 2,
+      "price": 135
+  },
+  {
+      "class_name": "Japanese Advanced",
+      "image": "https://example.com/japanese-advanced.jpg",
+      "instructor": "Maria Rodriguez",
+      "total_students": 22,
+      "available_seats": 6,
+      "price": 105
+  }
+]

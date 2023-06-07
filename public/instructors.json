@@ -1,0 +1,87 @@
+[
+    {
+      "name": "Maria Rodriguez",
+      "image": "https://example.com/maria-rodriguez.jpg",
+      "email": "maria.rodriguez@example.com",
+      "classes_taken": 3,
+      "class_names": ["Spanish Beginners", "Japanese Advanced"]
+    },
+    {
+      "name": "Ahmed Khan",
+      "image": "https://example.com/ahmed-khan.jpg",
+      "email": "ahmed.khan@example.com",
+      "classes_taken": 2,
+      "class_names": ["French Intermediate", "French Conversational"]
+    },
+    {
+      "name": "Hans Müller",
+      "image": "https://example.com/hans-muller.jpg",
+      "email": "hans.muller@example.com",
+      "classes_taken": 3,
+      "class_names": ["German Advanced", "German Conversational", "German Beginners"]
+    },
+    {
+      "name": "Giulia Rossi",
+      "image": "https://example.com/giulia-rossi.jpg",
+      "email": "giulia.rossi@example.com",
+      "classes_taken": 5,
+      "class_names": ["Italian Conversational", "Italian Intermediate", "Italian Beginners", "Italian Advanced", "Indian Intermediate", "Indian Beginners", "Indian Advanced"]
+    },
+    {
+      "name": "Miguel Hernandez",
+      "image": "https://example.com/miguel-hernandez.jpg",
+      "email": "miguel.hernandez@example.com",
+      "classes_taken": 3,
+      "class_names": ["Japanese Beginners", "Japanese Intermediate"]
+    },
+    {
+      "name": "Carlos Garcia",
+      "image": "https://example.com/carlos-garcia.jpg",
+      "email": "carlos.garcia@example.com",
+      "classes_taken": 3,
+      "class_names": ["Spanish Advanced", "Spanish Intermediate", "Arabic Intermediate", "Arabic Advanced"]
+    },
+    {
+      "name": "Ivan Petrov",
+      "image": "https://example.com/ivan-petrov.jpg",
+      "email": "ivan.petrov@example.com",
+      "classes_taken": 4,
+      "class_names": ["French Beginners", "Russian Beginners", "French Advanced"]
+    },
+    {
+      "name": "Li Wei",
+      "image": "https://example.com/li-wei.jpg",
+      "email": "li.wei@example.com",
+      "classes_taken": 3,
+      "class_names": ["Nepali Intermediate", "Chinese Intermediate", "Chinese Beginners", "Nepali Beginners"]
+    },
+    {
+      "name": "Sophie Lefebvre",
+      "image": "https://example.com/sophie-lefebvre.jpg",
+      "email": "sophie.lefebvre@example.com",
+      "classes_taken": 3,
+      "class_names": ["Spanish Conversational", "Japanese Advanced"]
+    },
+    {
+      "name": "Anna Schmidt",
+      "image": "https://example.com/anna-schmidt.jpg",
+      "email": "anna.schmidt@example.com",
+      "classes_taken": 2,
+      "class_names": ["German Advanced", "German Beginners"]
+    },
+    {
+      "name": "Jean-Luc Dubois",
+      "image": "https://example.com/jean-luc-dubois.jpg",
+      "email": "jean-luc.dubois@example.com",
+      "classes_taken": 2,
+      "class_names": ["French Conversational", "French Beginners", "Latin Conversational"]
+    },
+    {
+      "name": "Elena Petrova",
+      "image": "https://example.com/elena-petrova.jpg",
+      "email": "elena.petrova@example.com",
+      "classes_taken": 2,
+      "class_names": ["Spanish Conversational"]
+    }
+]
+

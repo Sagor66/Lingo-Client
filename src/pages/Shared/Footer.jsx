@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
       <img className="absolute" src={reverse_wave} alt="" />
-      <div className="grid grid-cols-7 bg-gradient-to-b from-yellow-300 to-orange-400 px-32 py-40 justify-between">
+      <div className="grid grid-cols-7 bg-gradient-to-b from-yellow-300 to-orange-400 px-32 pt-40 pb-20 justify-between">
         <div className="col-span-3">
           <Logo></Logo>
           <p>Foreign Language Learning Academy</p>
