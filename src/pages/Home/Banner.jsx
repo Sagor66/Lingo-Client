@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import "./styles.css";
+import "./styles.css";
 import { Pagination, Navigation, Autoplay } from "swiper";
 
 import banner1 from "../../assets/Banner/banner1.jpg";
@@ -25,10 +25,10 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        autoplay={{
-          delay: 3000, // Set the delay between each slide transition (in milliseconds)
-          disableOnInteraction: false, // Allow manual interaction to stop the auto-sliding
-        }}
+        // autoplay={{
+        //   delay: 3000, 
+        //   disableOnInteraction: false, 
+        // }}
         className="mySwiper h-[900px]"
       >
         <SwiperSlide>

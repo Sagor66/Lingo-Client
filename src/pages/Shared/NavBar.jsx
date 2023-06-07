@@ -1,26 +1,30 @@
-import { FaBeer } from 'react-icons/fa';
+import { FaLanguage } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
   const navOptions = (
     <>
-      <li>
-        <a>Home</a>
+      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
+        <Link to='/'>Home</Link>
       </li>
-      <li>
-        <a>Parent</a>
+      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
+        <Link to='/'>Instructors</Link>
       </li>
-      <li>
-        <a>Item 3</a>
+      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
+        <Link to='/'>Classes</Link>
+      </li>
+      <li className='text-xl font-nunito font-extrabold mr-7 hover:text-orange-500'>
+        <Link to='/'>Dashboard</Link>
       </li>
     </>
   );
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-gradient-to-r from-white to-yellow-400 lg:px-10 py-3 ">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown z-10">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +48,10 @@ const NavBar = () => {
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Lingo</a>
+          <Link to='/' className="font-nunito font-black text-4xl flex items-center gap-2">
+            Lingo
+            <FaLanguage className='text-6xl text-orange-400'></FaLanguage>
+            </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -52,7 +59,9 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link to='/login'>
+            <button className='font-nunito text-xl font-extrabold rounded-full px-12 py-3 bg-gradient-to-b from-orange-500 to-yellow-500 text-white tracking-wide hover:from-orange-600 hover:to-yellow-600'>Login</button>
+          </Link>
         </div>
       </div>
     </div>
