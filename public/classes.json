@@ -1,7 +1,7 @@
 [
   {
       "class_name": "Spanish Beginners",
-      "image": "https://example.com/spanish-beginners.jpg",
+      "image": "https://i.ibb.co/LnXJTtM/spenish.jpg",
       "instructor": "Maria Rodriguez",
       "total_students": 20,
       "available_seats": 5,
@@ -9,7 +9,7 @@
   },
   {
       "class_name": "French Intermediate",
-      "image": "https://example.com/french-intermediate.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Ahmed Khan",
       "total_students": 15,
       "available_seats": 10,
@@ -17,7 +17,7 @@
   },
   {
       "class_name": "German Advanced",
-      "image": "https://example.com/german-advanced.jpg",
+      "image": "https://i.ibb.co/28b8NBd/german.jpg",
       "instructor": "Hans Müller",
       "total_students": 12,
       "available_seats": 3,
@@ -25,7 +25,7 @@
   },
   {
       "class_name": "Italian Conversational",
-      "image": "https://example.com/italian-conversational.jpg",
+      "image": "https://i.ibb.co/GCDdT0Q/italian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 7,
@@ -33,7 +33,7 @@
   },
   {
       "class_name": "Japanese Beginners",
-      "image": "https://example.com/japanese-beginners.jpg",
+      "image": "https://i.ibb.co/5n2dKyG/japanese.jpg",
       "instructor": "Miguel Hernandez",
       "total_students": 25,
       "available_seats": 0,
@@ -41,7 +41,7 @@
   },
   {
       "class_name": "Spanish Advanced",
-      "image": "https://example.com/spanish-advanced.jpg",
+      "image": "https://i.ibb.co/LnXJTtM/spenish.jpg",
       "instructor": "Carlos Garcia",
       "total_students": 10,
       "available_seats": 5,
@@ -49,7 +49,7 @@
   },
   {
       "class_name": "French Beginners",
-      "image": "https://example.com/french-beginners.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Ivan Petrov",
       "total_students": 22,
       "available_seats": 3,
@@ -57,7 +57,7 @@
   },
   {
       "class_name": "Italian Intermediate",
-      "image": "https://example.com/italian-intermediate.jpg",
+      "image": "https://i.ibb.co/GCDdT0Q/italian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 16,
       "available_seats": 9,
@@ -65,7 +65,7 @@
   },
   {
       "class_name": "Chinese Beginners",
-      "image": "https://example.com/chinese-beginners.jpg",
+      "image": "https://i.ibb.co/BZ46jNm/Chinese.jpg",
       "instructor": "Li Wei",
       "total_students": 14,
       "available_seats": 6,
@@ -73,7 +73,7 @@
   },
   {
       "class_name": "German Conversational",
-      "image": "https://example.com/german-conversational.jpg",
+      "image": "https://i.ibb.co/28b8NBd/german.jpg",
       "instructor": "Hans Müller",
       "total_students": 10,
       "available_seats": 10,
@@ -81,7 +81,7 @@
   },
   {
       "class_name": "Japanese Intermediate",
-      "image": "https://example.com/japanese-intermediate.jpg",
+      "image": "https://i.ibb.co/5n2dKyG/japanese.jpg",
       "instructor": "Miguel Hernandez",
       "total_students": 8,
       "available_seats": 2,
@@ -89,7 +89,7 @@
   },
   {
       "class_name": "Russian Beginners",
-      "image": "https://example.com/russian-beginners.jpg",
+      "image": "https://i.ibb.co/x7Gp0L9/russian.jpg",
       "instructor": "Ivan Petrov",
       "total_students": 20,
       "available_seats": 4,
@@ -97,7 +97,7 @@
   },
   {
       "class_name": "Spanish Intermediate",
-      "image": "https://example.com/spanish-intermediate.jpg",
+      "image": "https://i.ibb.co/LnXJTtM/spenish.jpg",
       "instructor": "Carlos Garcia",
       "total_students": 12,
       "available_seats": 8,
@@ -105,7 +105,7 @@
   },
   {
       "class_name": "French Advanced",
-      "image": "https://example.com/french-advanced.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Ivan Petrov",
       "total_students": 15,
       "available_seats": 5,
@@ -113,7 +113,7 @@
   },
   {
       "class_name": "Italian Beginners",
-      "image": "https://example.com/italian-beginners.jpg",
+      "image": "https://i.ibb.co/GCDdT0Q/italian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 7,
@@ -121,7 +121,7 @@
   },
   {
       "class_name": "Chinese Intermediate",
-      "image": "https://example.com/chinese-intermediate.jpg",
+      "image": "https://i.ibb.co/BZ46jNm/Chinese.jpg",
       "instructor": "Li Wei",
       "total_students": 10,
       "available_seats": 5,
@@ -129,7 +129,7 @@
   },
   {
       "class_name": "Spanish Conversational",
-      "image": "https://example.com/spanish-conversational.jpg",
+      "image": "https://i.ibb.co/LnXJTtM/spenish.jpg",
       "instructor": "Sophie Lefebvre",
       "total_students": 12,
       "available_seats": 4,
@@ -137,7 +137,7 @@
   },
   {
       "class_name": "German Beginners",
-      "image": "https://example.com/german-beginners.jpg",
+      "image": "https://i.ibb.co/28b8NBd/german.jpg",
       "instructor": "Anna Schmidt",
       "total_students": 20,
       "available_seats": 3,
@@ -145,7 +145,7 @@
   },
   {
       "class_name": "French Conversational",
-      "image": "https://example.com/french-conversational.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Jean-Luc Dubois",
       "total_students": 16,
       "available_seats": 8,
@@ -153,7 +153,7 @@
   },
   {
       "class_name": "Italian Advanced",
-      "image": "https://example.com/italian-advanced.jpg",
+      "image": "https://i.ibb.co/GCDdT0Q/italian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 10,
       "available_seats": 2,
@@ -161,7 +161,7 @@
   },
   {
       "class_name": "Japanese Advanced",
-      "image": "https://example.com/japanese-advanced.jpg",
+      "image": "https://i.ibb.co/5n2dKyG/japanese.jpg",
       "instructor": "Sophie Lefebvre",
       "total_students": 22,
       "available_seats": 6,
@@ -169,7 +169,7 @@
   },
   {
       "class_name": "Arabic Intermediate",
-      "image": "https://example.com/spanish-intermediate.jpg",
+      "image": "https://i.ibb.co/PD3sV6B/Arabic.jpg",
       "instructor": "Carlos Garcia",
       "total_students": 18,
       "available_seats": 9,
@@ -177,7 +177,7 @@
   },
   {
       "class_name": "German Advanced",
-      "image": "https://example.com/german-advanced.jpg",
+      "image": "https://i.ibb.co/28b8NBd/german.jpg",
       "instructor": "Anna Schmidt",
       "total_students": 14,
       "available_seats": 5,
@@ -185,7 +185,7 @@
   },
   {
       "class_name": "French Beginners",
-      "image": "https://example.com/french-beginners.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Jean-Luc Dubois",
       "total_students": 10,
       "available_seats": 10,
@@ -193,7 +193,7 @@
   },
   {
       "class_name": "Indian Intermediate",
-      "image": "https://example.com/italian-intermediate.jpg",
+      "image": "https://i.ibb.co/s9kKVpw/indian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 8,
       "available_seats": 2,
@@ -201,7 +201,7 @@
   },
   {
       "class_name": "Nepali Beginners",
-      "image": "https://example.com/chinese-beginners.jpg",
+      "image": "https://i.ibb.co/wyHnC94/nepali.webp",
       "instructor": "Li Wei",
       "total_students": 20,
       "available_seats": 4,
@@ -209,7 +209,7 @@
   },
   {
       "class_name": "Arabic Advanced",
-      "image": "https://example.com/spanish-advanced.jpg",
+      "image": "https://i.ibb.co/PD3sV6B/Arabic.jpg",
       "instructor": "Carlos Garcia",
       "total_students": 12,
       "available_seats": 8,
@@ -217,7 +217,7 @@
   },
   {
       "class_name": "Latin Conversational",
-      "image": "https://example.com/french-conversational.jpg",
+      "image": "https://i.ibb.co/6rs8x8m/latin.webp",
       "instructor": "Jean-Luc Dubois",
       "total_students": 15,
       "available_seats": 5,
@@ -225,7 +225,7 @@
   },
   {
       "class_name": "Indian Beginners",
-      "image": "https://example.com/italian-beginners.jpg",
+      "image": "https://i.ibb.co/s9kKVpw/indian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 7,
@@ -233,7 +233,7 @@
   },
   {
       "class_name": "Nepali Intermediate",
-      "image": "https://example.com/chinese-intermediate.jpg",
+      "image": "https://i.ibb.co/wyHnC94/nepali.webp",
       "instructor": "Li Wei",
       "total_students": 10,
       "available_seats": 5,
@@ -241,7 +241,7 @@
   },
   {
       "class_name": "Spanish Conversational",
-      "image": "https://example.com/spanish-conversational.jpg",
+      "image": "https://i.ibb.co/LnXJTtM/spenish.jpg",
       "instructor": "Elena Petrova",
       "total_students": 12,
       "available_seats": 4,
@@ -249,7 +249,7 @@
   },
   {
       "class_name": "German Beginners",
-      "image": "https://example.com/german-beginners.jpg",
+      "image": "https://i.ibb.co/28b8NBd/german.jpg",
       "instructor": "Hans Müller",
       "total_students": 20,
       "available_seats": 3,
@@ -257,7 +257,7 @@
   },
   {
       "class_name": "French Conversational",
-      "image": "https://example.com/french-conversational.jpg",
+      "image": "https://i.ibb.co/FwHRQ6H/french.jpg",
       "instructor": "Ahmed Khan",
       "total_students": 16,
       "available_seats": 8,
@@ -265,7 +265,7 @@
   },
   {
       "class_name": "Indian Advanced",
-      "image": "https://example.com/italian-advanced.jpg",
+      "image": "https://i.ibb.co/s9kKVpw/indian.jpg",
       "instructor": "Giulia Rossi",
       "total_students": 10,
       "available_seats": 2,
@@ -273,7 +273,7 @@
   },
   {
       "class_name": "Japanese Advanced",
-      "image": "https://example.com/japanese-advanced.jpg",
+      "image": "https://i.ibb.co/5n2dKyG/japanese.jpg",
       "instructor": "Maria Rodriguez",
       "total_students": 22,
       "available_seats": 6,
