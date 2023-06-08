@@ -68,7 +68,7 @@ const PopularInstructors = () => {
       <SectionHeader sectionHeader={"Top Instructors"}></SectionHeader>
       <div className="grid grid-cols-3 gap-10">
         {instructors.map((instructor, i) => (
-          <div key={i} className="flex shadow-2xl relative rounded-lg">
+          <div key={i} className="flex shadow-2xl relative rounded-lg hover:scale-110 transition-all">
             <img
               className="h-60 w-60 object-cover bg-gradient-to-l from-yellow-400 to-white rounded-l-lg"
               src={instructor.image}
@@ -78,7 +78,7 @@ const PopularInstructors = () => {
               <h4 className="font-nunito text-3xl font-extrabold pt-16 h-36">{instructor.name}</h4>
               <button className="font-nunito font-bold bg-white px-4 py-2 rounded-lg my-4 hover:bg-black hover:text-white">See Classes</button>
             </div>
-            <p className="absolute top-0 font-bold bg-green-500 px-4 py-1 rounded-ss-lg rounded-ee-lg">Students: {topInstructorTotalStudent[i][1]}</p>
+            <p className="absolute top-0 right-0 font-bold bg-lime-500 px-4 py-1 rounded-se-lg rounded-es-lg">Students: {topInstructorTotalStudent[i][1]}</p>
           </div>
         ))}
       </div>
