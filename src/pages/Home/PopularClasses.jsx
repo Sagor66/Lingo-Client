@@ -22,7 +22,7 @@ const PopularClasses = () => {
       });
   }, []);
 
-  console.log(classes);
+  // console.log(classes);
 
   return (
     <div className="max-w-7xl mx-auto mb-40">
