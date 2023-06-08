@@ -1,84 +1,84 @@
 [
     {
       "name": "Maria Rodriguez",
-      "image": "https://example.com/maria-rodriguez.jpg",
+      "image": "https://i.ibb.co/jb2JcGv/Maria-Rodriguez.png",
       "email": "maria.rodriguez@example.com",
       "classes_taken": 3,
       "class_names": ["Spanish Beginners", "Japanese Advanced"]
     },
     {
       "name": "Ahmed Khan",
-      "image": "https://example.com/ahmed-khan.jpg",
+      "image": "https://i.ibb.co/bPJ8CPY/Ahmed-Khan.png",
       "email": "ahmed.khan@example.com",
       "classes_taken": 2,
       "class_names": ["French Intermediate", "French Conversational"]
     },
     {
       "name": "Hans Müller",
-      "image": "https://example.com/hans-muller.jpg",
+      "image": "https://i.ibb.co/zbp1GFF/Hans-M-ller.png",
       "email": "hans.muller@example.com",
       "classes_taken": 3,
       "class_names": ["German Advanced", "German Conversational", "German Beginners"]
     },
     {
       "name": "Giulia Rossi",
-      "image": "https://example.com/giulia-rossi.jpg",
+      "image": "https://i.ibb.co/JFDwpTr/Giulia-Rossi.png",
       "email": "giulia.rossi@example.com",
       "classes_taken": 5,
       "class_names": ["Italian Conversational", "Italian Intermediate", "Italian Beginners", "Italian Advanced", "Indian Intermediate", "Indian Beginners", "Indian Advanced"]
     },
     {
       "name": "Miguel Hernandez",
-      "image": "https://example.com/miguel-hernandez.jpg",
+      "image": "https://i.ibb.co/RhZzgkB/Miguel-Hernandez.png",
       "email": "miguel.hernandez@example.com",
       "classes_taken": 3,
       "class_names": ["Japanese Beginners", "Japanese Intermediate"]
     },
     {
       "name": "Carlos Garcia",
-      "image": "https://example.com/carlos-garcia.jpg",
+      "image": "https://i.ibb.co/CQ5787Y/Carlos-Garcia.png",
       "email": "carlos.garcia@example.com",
       "classes_taken": 3,
       "class_names": ["Spanish Advanced", "Spanish Intermediate", "Arabic Intermediate", "Arabic Advanced"]
     },
     {
       "name": "Ivan Petrov",
-      "image": "https://example.com/ivan-petrov.jpg",
+      "image": "https://i.ibb.co/j9C0Vvd/Ivan-Petrov.png",
       "email": "ivan.petrov@example.com",
       "classes_taken": 4,
       "class_names": ["French Beginners", "Russian Beginners", "French Advanced"]
     },
     {
       "name": "Li Wei",
-      "image": "https://example.com/li-wei.jpg",
+      "image": "https://i.ibb.co/12wZGg6/Li-Wei.png",
       "email": "li.wei@example.com",
       "classes_taken": 3,
       "class_names": ["Nepali Intermediate", "Chinese Intermediate", "Chinese Beginners", "Nepali Beginners"]
     },
     {
       "name": "Sophie Lefebvre",
-      "image": "https://example.com/sophie-lefebvre.jpg",
+      "image": "https://i.ibb.co/R34Gd1n/Sophie-Lefebvre.png",
       "email": "sophie.lefebvre@example.com",
       "classes_taken": 3,
       "class_names": ["Spanish Conversational", "Japanese Advanced"]
     },
     {
       "name": "Anna Schmidt",
-      "image": "https://example.com/anna-schmidt.jpg",
+      "image": "https://i.ibb.co/yfBxszf/Anna-Schmidt.png",
       "email": "anna.schmidt@example.com",
       "classes_taken": 2,
       "class_names": ["German Advanced", "German Beginners"]
     },
     {
       "name": "Jean-Luc Dubois",
-      "image": "https://example.com/jean-luc-dubois.jpg",
+      "image": "https://i.ibb.co/QfkRPVg/Jean-Luc-Dubois.png",
       "email": "jean-luc.dubois@example.com",
       "classes_taken": 2,
       "class_names": ["French Conversational", "French Beginners", "Latin Conversational"]
     },
     {
       "name": "Elena Petrova",
-      "image": "https://example.com/elena-petrova.jpg",
+      "image": "https://i.ibb.co/k6xrWwC/Elena-Petrova.png",
       "email": "elena.petrova@example.com",
       "classes_taken": 2,
       "class_names": ["Spanish Conversational"]

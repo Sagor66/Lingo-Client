@@ -8,7 +8,7 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
-        <Link to="/">Instructors</Link>
+        <Link to="/instructors">Instructors</Link>
       </li>
       <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
         <Link to="/classes">Classes</Link>

@@ -17,7 +17,7 @@ const ClassCard = ({ classCard }) => {
 
   return (
     <div
-      className={`shadow-2xl pb-8 rounded-lg ${
+      className={`shadow-2xl pb-8 rounded-lg hover:scale-110 transition-all ${
         available_seats === 0 ? "bg-red-200" : ""
       }`}
     >
