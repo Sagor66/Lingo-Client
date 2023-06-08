@@ -6,4 +6,8 @@
   .btn-primary {
     @apply font-nunito text-xl font-extrabold rounded-full px-12 py-3 bg-gradient-to-b from-orange-500 to-yellow-500 text-white tracking-wide hover:from-orange-600 hover:to-yellow-600
   }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text
+  }
 }

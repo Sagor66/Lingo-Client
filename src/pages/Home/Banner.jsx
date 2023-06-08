@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <>
+    <div className="mb-40">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -104,7 +104,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
