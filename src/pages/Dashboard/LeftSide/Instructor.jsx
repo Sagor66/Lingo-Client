@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import DashboardCommon from "../../../components/DashboardCommon";
+import { GrAdd } from 'react-icons/gr';
+import { BsJournals } from "react-icons/bs";
+
 
 const Instructor = () => {
   return (
@@ -7,11 +11,18 @@ const Instructor = () => {
         Instructor Dashboard
       </li>
       <li>
-        <Link>Sidebar Item 1</Link>
+        <Link>
+        <GrAdd></GrAdd>
+        Add Class
+        </Link>
       </li>
       <li>
-        <Link>Sidebar Item 2</Link>
+        <Link>
+        <BsJournals></BsJournals>
+        My Classes
+        </Link>
       </li>
+      <DashboardCommon></DashboardCommon>
     </div>
   );
 };

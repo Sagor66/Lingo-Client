@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const {
@@ -12,7 +11,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser } = useAuth();
 
   const onSubmit = (data) => {
     console.log(data)

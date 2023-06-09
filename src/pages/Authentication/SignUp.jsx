@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
+import useAuth from "../../hooks/useAuth";
 
 const SignUp = () => {
   const {
@@ -11,9 +10,10 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
 
-  const { createUser, updateUserProfile } = useContext(AuthContext)
+  const { createUser, updateUserProfile } = useAuth()
 
   const onSubmit = (data) => {
+    data.role = "student"
     console.log(data)
     createUser(data.email, data.password)
     .then(result => {

@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import Admin from "../pages/Dashboard/LeftSide/Admin";
 import Instructor from "../pages/Dashboard/LeftSide/Instructor";
 import Student from "../pages/Dashboard/LeftSide/Student";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Dashboard = () => {
 
-  const user = "student"
+  const { user } = useContext(AuthContext)
+  console.log(user)
 
 
   return (
@@ -25,9 +28,9 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full bg-gradient-to-r from-orange-400 to-yellow-400 text-xl font-nunito font-bold">
             {/* Sidebar content here */}
-            {user === "admin" && <Admin></Admin>}
-            {user === "instructor" && <Instructor></Instructor>}
-            {user === "student" && <Student></Student>}
+            {/* {user.role === "admin" && <Admin></Admin>}
+            {user.role === "instructor" && <Instructor></Instructor>}
+            {user.role === "student" && <Student></Student>} */}
           </ul>
         </div>
       </div>

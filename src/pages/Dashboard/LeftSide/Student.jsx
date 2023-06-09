@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { AiOutlineHome, AiOutlineSelect } from "react-icons/ai";
+import { AiOutlineSelect } from "react-icons/ai";
 import { BiSelectMultiple } from "react-icons/bi";
-import { BsPerson } from "react-icons/bs";
-import { MdOutlineClass } from "react-icons/md";
+import DashboardCommon from "../../../components/DashboardCommon";
+
 
 const Student = () => {
   return (
@@ -22,25 +22,7 @@ const Student = () => {
           Enrolled Classes
         </Link>
       </li>
-      <div className="divider"></div>
-      <li>
-        <Link to="/">
-          <AiOutlineHome></AiOutlineHome>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/instructors">
-          <BsPerson></BsPerson>
-          Instructors
-        </Link>
-      </li>
-      <li>
-        <Link to="/classes">
-          <MdOutlineClass></MdOutlineClass>
-          Classes
-        </Link>
-      </li>
+      <DashboardCommon></DashboardCommon>      
     </div>
   );
 };

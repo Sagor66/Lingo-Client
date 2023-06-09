@@ -1,4 +1,6 @@
+import { BsJournalText, BsPeople } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import DashboardCommon from "../../../components/DashboardCommon";
 
 const Admin = () => {
   return (
@@ -7,11 +9,16 @@ const Admin = () => {
         Admin Dashboard
       </li>
       <li>
-        <Link>Sidebar Item 1</Link>
+        <Link>
+        <BsJournalText></BsJournalText>
+        Manage Classes</Link>
       </li>
       <li>
-        <Link>Sidebar Item 2</Link>
+        <Link>
+        <BsPeople></BsPeople>
+        Manage Users</Link>
       </li>
+      <DashboardCommon></DashboardCommon>
     </div>
   );
 };
