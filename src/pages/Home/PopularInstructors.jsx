@@ -10,7 +10,7 @@ const PopularInstructors = () => {
   );
 
   useEffect(() => {
-    fetch("../../../public/classes.json")
+    fetch("http://localhost:5000/classes")
       .then((res) => res.json())
       .then((data) => {
         const instructorTotals = {};
@@ -46,7 +46,7 @@ const PopularInstructors = () => {
   // console.log(topInstructorTotalStudent);
 
   useEffect(() => {
-    fetch("../../../public/instructors.json")
+    fetch("http://localhost:5000/instructors")
       .then((res) => res.json())
       .then((data) => {
         const top = [];

@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBX1h2vRHrJyCMeOlfN15l-Ba__siyaJUY",
-  authDomain: "summer-camp-school-8b807.firebaseapp.com",
-  projectId: "summer-camp-school-8b807",
-  storageBucket: "summer-camp-school-8b807.appspot.com",
-  messagingSenderId: "175177299792",
-  appId: "1:175177299792:web:fff912ea4247f7db801e55"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
