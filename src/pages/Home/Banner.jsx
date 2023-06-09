@@ -25,10 +25,10 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         className="mySwiper h-[900px]"
       >
         <SwiperSlide>

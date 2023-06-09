@@ -43,7 +43,7 @@ const PopularInstructors = () => {
       });
   }, []);
 
-  console.log(topInstructorTotalStudent);
+  // console.log(topInstructorTotalStudent);
 
   useEffect(() => {
     fetch("../../../public/instructors.json")
