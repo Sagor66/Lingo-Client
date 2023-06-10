@@ -6,6 +6,7 @@ import Instructors from "../pages/Instructors/Instructors";
 import Login from "../pages/Authentication/Login";
 import SignUp from "../pages/Authentication/SignUp";
 import Dashboard from "../layout/Dashboard";
+import SelectedClasses from "../pages/Dashboard/RightSide/SelectedClasses";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,12 @@ export const router = createBrowserRouter([
   },
   {
     path: 'dashboard',
-    element: <Dashboard></Dashboard>
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: 'selected-classes',
+        element: <SelectedClasses></SelectedClasses>
+      }
+    ],
   }
 ])

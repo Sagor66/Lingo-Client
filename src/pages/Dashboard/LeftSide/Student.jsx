@@ -11,7 +11,7 @@ const Student = () => {
         Student Dashboard
       </li>
       <li>
-        <Link>
+        <Link to='/dashboard/selected-classes'>
           <AiOutlineSelect></AiOutlineSelect>
           Selected Classes
         </Link>

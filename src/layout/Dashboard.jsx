@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Admin from "../pages/Dashboard/LeftSide/Admin";
 import Instructor from "../pages/Dashboard/LeftSide/Instructor";
 import Student from "../pages/Dashboard/LeftSide/Student";
@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [ isAdmin ] = useAdmin()
   const [ isInstructor ] = useInstructor()
   const [ isStudent ] = useStudent()
-  console.log(isStudent)
+  
 
 
   return (
@@ -28,6 +28,7 @@ const Dashboard = () => {
           >
             Open drawer
           </label>
+          <Outlet></Outlet>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
