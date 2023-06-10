@@ -22,7 +22,7 @@ const Admin = () => {
         </Link>
       </li>
       <li>
-        <Link>
+        <Link to='manage-users'>
           <BsPeople></BsPeople>
           Manage Users
         </Link>
