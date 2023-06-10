@@ -1,5 +1,6 @@
-const ClassCard = ({ classCard }) => {
+const ClassCard = ({ classCard, handleSelectButton }) => {
   const {
+    _id,
     class_name,
     image,
     instructor,
@@ -10,10 +11,6 @@ const ClassCard = ({ classCard }) => {
 
   const courseName = class_name.split(" ")[0];
   const courseLevel = class_name.split(" ")[1];
-
-  const handleSelectButton = () => {
-    console.log("clicked");
-  };
 
   return (
     <div
@@ -53,7 +50,7 @@ const ClassCard = ({ classCard }) => {
           <p className="text-orange-400 font-bold">Price: ${price}</p>
         </div>
         <button
-          onClick={handleSelectButton}
+          onClick={() => handleSelectButton(_id)}
           disabled={available_seats === 0}
           className={`rounded-xl w-full mt-6 ${
             available_seats === 0 ? "px-12 py-3 bg-gray-200" : "btn-primary"

@@ -4,11 +4,16 @@ import Instructor from "../pages/Dashboard/LeftSide/Instructor";
 import Student from "../pages/Dashboard/LeftSide/Student";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import useAdmin from "../hooks/useAdmin";
+import useInstructor from "../hooks/useInstructor";
+import useStudent from "../hooks/useStudent";
 
 const Dashboard = () => {
 
-  const { user } = useContext(AuthContext)
-  console.log(user)
+  const [ isAdmin ] = useAdmin()
+  const [ isInstructor ] = useInstructor()
+  const [ isStudent ] = useStudent()
+  console.log(isStudent)
 
 
   return (
@@ -28,9 +33,9 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full bg-gradient-to-r from-orange-400 to-yellow-400 text-xl font-nunito font-bold">
             {/* Sidebar content here */}
-            {/* {user.role === "admin" && <Admin></Admin>}
-            {user.role === "instructor" && <Instructor></Instructor>}
-            {user.role === "student" && <Student></Student>} */}
+            {isAdmin && <Admin></Admin>}
+            {isInstructor && <Instructor></Instructor>}
+            {isStudent && <Student></Student>}
           </ul>
         </div>
       </div>
