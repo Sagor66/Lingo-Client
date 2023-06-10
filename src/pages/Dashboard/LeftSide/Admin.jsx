@@ -16,7 +16,7 @@ const Admin = () => {
         </Link>
       </li>
       <li>
-        <Link>
+        <Link to='manage-classes'>
           <BsJournalText></BsJournalText>
           Manage Classes
         </Link>
