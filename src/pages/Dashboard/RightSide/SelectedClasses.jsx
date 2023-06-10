@@ -47,10 +47,10 @@ const SelectedClasses = () => {
   return (
     <div className="mt-10">
       <SectionHeader sectionHeader="My Selected Classes"></SectionHeader>
-      <div className="overflow-x-auto w-full">
+      <div className="overflow-x-auto w-full bg-gradient-to-r from-yellow-100 to-orange-300 p-8 rounded-xl mb-40">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="font-bold text-black">
             <tr>
               <th>
                 <label>#</label>

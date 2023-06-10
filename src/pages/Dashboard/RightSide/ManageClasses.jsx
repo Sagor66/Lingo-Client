@@ -3,6 +3,7 @@ import SectionHeader from "../../../components/SectionHeader";
 import useClassesAll from "../../../hooks/useClassesAll";
 import Swal from "sweetalert2";
 import axios from "axios";
+import FeedBackModal from "./FeedBackModal";
 
 const ManageClasses = () => {
   const [newClasses, refetch] = useClassesAll();
@@ -82,10 +83,10 @@ const ManageClasses = () => {
     <div>
       <div className="mt-10">
         <SectionHeader sectionHeader="Manage Classes"></SectionHeader>
-        <div className="overflow-x-auto w-full">
+        <div className="overflow-x-auto w-full bg-gradient-to-r from-yellow-100 to-orange-300 p-8 rounded-xl mb-40">
           <table className="table">
             {/* head */}
-            <thead>
+            <thead className="font-bold text-black">
               <tr>
                 <th>
                   <label>#</label>
@@ -126,16 +127,14 @@ const ManageClasses = () => {
                   <td className="text-center">{item.available_seats}</td>
                   <td>${item.price}</td>
                   <td>{item.status}</td>
-                  <th>
-                    <button onClick={() => handleApproveButton(item)} className="btn bg-green-300 btn-xs mr-4">
+                  <th className="flex items-center justify-center gap-4">
+                    <button onClick={() => handleApproveButton(item)} className="btn bg-green-300 btn-xs">
                       Approve
                     </button>
-                    <button onClick={() => handleDenyButton(item)} className="btn bg-red-200 text-red-700 btn-xs mr-4">
+                    <button onClick={() => handleDenyButton(item)} className="btn bg-red-200 text-red-700 btn-xs">
                       Deny
                     </button>
-                    <button className="btn bg-gray-300 btn-xs">
-                      Feedback
-                    </button>
+                    <FeedBackModal item={item}></FeedBackModal>
                   </th>
                 </tr>
               ))}
