@@ -1,4 +1,8 @@
-const ClassCard = ({ classCard, handleSelectButton }) => {
+import useAuth from "../hooks/useAuth";
+
+const ClassCard = ({ classCard }) => {
+  const { user } = useAuth();
+
   const {
     _id,
     class_name,
@@ -11,6 +15,37 @@ const ClassCard = ({ classCard, handleSelectButton }) => {
 
   const courseName = class_name.split(" ")[0];
   const courseLevel = class_name.split(" ")[1];
+
+  const handleSelectButton = (item) => {
+    if (user && user.email) {
+      const cartItem = {
+        classId: _id,
+        class_name,
+        image,
+        instructor,
+        price,
+        available_seats,
+        total_students,
+        email: user.email,
+      };
+      cartItem.email = user.email;
+      fetch("http://localhost:5000/cart", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(cartItem),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            console.log("added successfully");
+          }
+        });
+    } else {
+      console.log('please login')
+    }
+  };
 
   return (
     <div
@@ -50,7 +85,7 @@ const ClassCard = ({ classCard, handleSelectButton }) => {
           <p className="text-orange-400 font-bold">Price: ${price}</p>
         </div>
         <button
-          onClick={() => handleSelectButton(_id)}
+          onClick={() => handleSelectButton(classCard)}
           disabled={available_seats === 0}
           className={`rounded-xl w-full mt-6 ${
             available_seats === 0 ? "px-12 py-3 bg-gray-200" : "btn-primary"
