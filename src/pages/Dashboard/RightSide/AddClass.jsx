@@ -16,7 +16,7 @@ const AddClass = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    data.email = user.email
+    data.status = "pending"
     data.total_students = 0
     axios
       .post("http://localhost:5000/new-classes", data)
@@ -48,7 +48,7 @@ const AddClass = () => {
               type="text"
               placeholder="name"
               className="input input-bordered"
-              {...register("name", { required: true })}
+              {...register("class_name", { required: true })}
             />
           </div>
           <div className="form-control">
@@ -71,7 +71,7 @@ const AddClass = () => {
                 type="text"
                 placeholder="seats"
                 className="input input-bordered"
-                {...register("seats", { required: true })}
+                {...register("available_seats", { required: true })}
               />
             </div>
             <div className="form-control w-full">
@@ -94,7 +94,22 @@ const AddClass = () => {
               type="text"
               placeholder="instructor"
               className="input input-bordered"
+              defaultValue={user?.displayName}
               {...register("instructor", { required: true })}
+              readOnly
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Instructor Email</span>
+            </label>
+            <input
+              type="text"
+              placeholder="email"
+              className="input input-bordered"
+              defaultValue={user?.email}
+              {...register("email", { required: true })}
+              readOnly
             />
           </div>
 

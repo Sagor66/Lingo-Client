@@ -24,7 +24,7 @@ const Instructor = () => {
         </Link>
       </li>
       <li>
-        <Link>
+        <Link to='my-classes'>
         <BsJournals></BsJournals>
         My Classes
         </Link>
