@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineSelect } from "react-icons/ai";
 import { BiSelectMultiple } from "react-icons/bi";
 import DashboardCommon from "../../../components/DashboardCommon";
+import { TbHomeCheck } from "react-icons/tb";
 
 
 const Student = () => {
@@ -9,6 +10,12 @@ const Student = () => {
     <div>
       <li className="text-2xl bg-white text-center py-2 font-black mb-8">
         Student Dashboard
+      </li>
+      <li>
+        <Link to="/dashboard">
+          <TbHomeCheck></TbHomeCheck>
+          Student Home
+        </Link>
       </li>
       <li>
         <Link to='/dashboard/selected-classes'>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import DashboardCommon from "../../../components/DashboardCommon";
 import { GrAdd } from 'react-icons/gr';
 import { BsJournals } from "react-icons/bs";
+import { TbHomeCheck } from "react-icons/tb";
 
 
 const Instructor = () => {
@@ -11,7 +12,13 @@ const Instructor = () => {
         Instructor Dashboard
       </li>
       <li>
-        <Link>
+        <Link to="/dashboard">
+          <TbHomeCheck></TbHomeCheck>
+          Instructor Home
+        </Link>
+      </li>
+      <li>
+        <Link to="add-class">
         <GrAdd></GrAdd>
         Add Class
         </Link>

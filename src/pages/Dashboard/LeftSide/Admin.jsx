@@ -1,6 +1,7 @@
 import { BsJournalText, BsPeople } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import DashboardCommon from "../../../components/DashboardCommon";
+import { TbHomeCheck } from "react-icons/tb";
 
 const Admin = () => {
   return (
@@ -9,14 +10,22 @@ const Admin = () => {
         Admin Dashboard
       </li>
       <li>
-        <Link>
-        <BsJournalText></BsJournalText>
-        Manage Classes</Link>
+        <Link to="/dashboard">
+          <TbHomeCheck></TbHomeCheck>
+          Admin Home
+        </Link>
       </li>
       <li>
         <Link>
-        <BsPeople></BsPeople>
-        Manage Users</Link>
+          <BsJournalText></BsJournalText>
+          Manage Classes
+        </Link>
+      </li>
+      <li>
+        <Link>
+          <BsPeople></BsPeople>
+          Manage Users
+        </Link>
       </li>
       <DashboardCommon></DashboardCommon>
     </div>

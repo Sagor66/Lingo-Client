@@ -7,9 +7,11 @@ import { AuthContext } from "../providers/AuthProvider";
 import useAdmin from "../hooks/useAdmin";
 import useInstructor from "../hooks/useInstructor";
 import useStudent from "../hooks/useStudent";
+import useAuth from "../hooks/useAuth";
 
 const Dashboard = () => {
 
+  const { user } = useAuth()
   const [ isAdmin ] = useAdmin()
   const [ isInstructor ] = useInstructor()
   const [ isStudent ] = useStudent()
@@ -24,10 +26,11 @@ const Dashboard = () => {
           {/* Page content here */}
           <label
             htmlFor="my-drawer-2"
-            className="btn-primary drawer-button mt-4 lg:hidden"
+            className="btn-primary drawer-button my-4 lg:hidden"
           >
             Open drawer
           </label>
+          <h2 className="text-7xl font-nunito font-black uppercase bg-gradient-to-r from-yellow-400 to-white px-4 py-2 rounded-s-full">{user?.displayName}</h2>
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
