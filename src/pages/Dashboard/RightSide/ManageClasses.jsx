@@ -43,7 +43,40 @@ const ManageClasses = () => {
       });
   };
 
-  const handleDenyButton = () => {}
+  const handleDenyButton = (item) => {
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger",
+      },
+      buttonsStyling: false,
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        showCancelButton: true,
+        confirmButtonText: "Yes, deny it!",
+        cancelButtonText: "No, cancel!",
+        reverseButtons: true,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          axios.patch(`http://localhost:5000/new-classes/deny/${item._id}`)
+          .then(data => {
+            console.log(data.data)
+            if (data.data.modifiedCount > 0) {
+              refetch()
+              swalWithBootstrapButtons.fire(
+                "Denied",
+                "The selected class has been denied.",
+                "success"
+              );
+            }
+          })
+          .catch(error => console.log(error.message))
+        }
+      });
+  };
 
   return (
     <div>
