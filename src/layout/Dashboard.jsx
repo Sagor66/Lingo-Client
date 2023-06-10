@@ -30,7 +30,7 @@ const Dashboard = () => {
           >
             Open drawer
           </label>
-          <h2 className="text-7xl font-nunito font-black uppercase bg-gradient-to-r from-yellow-400 to-white px-4 py-2 rounded-s-full">{user?.displayName}</h2>
+          <h2 className="text-7xl font-nunito font-black uppercase bg-gradient-to-r from-yellow-400 to-white px-4 py-2 rounded-s-full my-10">{user?.displayName}</h2>
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">

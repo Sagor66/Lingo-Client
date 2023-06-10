@@ -1,7 +1,13 @@
+import axios from "axios";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
+import SectionHeader from "../../../components/SectionHeader";
+import useAuth from "../../../hooks/useAuth";
 
 const AddClass = () => {
+  const { user } = useAuth()
+
   const {
     register,
     handleSubmit,
@@ -10,14 +16,28 @@ const AddClass = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    data.email = user.email
+    data.total_students = 0
+    axios
+      .post("http://localhost:5000/new-classes", data)
+      .then((data) => {
+        console.log(data.data);
+        if (data.data.insertedId) {
+          toast.success("Successfully Added!");
+          console.log("added");
+        }
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
     <div>
+      <div className="mt-10">
+        <SectionHeader sectionHeader="Add A Class"></SectionHeader>
+      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-xl shadow-2xl rounded-xl mx-auto bg-white bg-gradient-to-t from-yellow-100 to-orange-100 my-10"
+        className="max-w-xl shadow-2xl rounded-xl mx-auto bg-white bg-gradient-to-t from-yellow-100 to-orange-100 mt-10"
       >
         <div className="card-body">
           <div className="form-control">
