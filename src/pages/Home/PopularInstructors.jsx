@@ -10,7 +10,7 @@ const PopularInstructors = () => {
   );
 
   useEffect(() => {
-    fetch("http://localhost:5000/classes")
+    fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes")
       .then((res) => res.json())
       .then((data) => {
         const instructorTotals = {};
@@ -46,7 +46,7 @@ const PopularInstructors = () => {
   // console.log(topInstructorTotalStudent);
 
   useEffect(() => {
-    fetch("http://localhost:5000/instructors")
+    fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/instructors")
       .then((res) => res.json())
       .then((data) => {
         const top = [];

@@ -13,6 +13,10 @@ import banner3 from "../../assets/Banner/banner3.jpg";
 import wave from "../../assets/Banner/wave_bottom.png";
 import { Link } from "react-router-dom";
 
+// https://i.ibb.co/WDbfNHn/banner1.jpg
+// https://i.ibb.co/LCgzg2W/banner2.jpg
+// https://i.ibb.co/vY3QjVC/banner3.gif
+
 const Banner = () => {
   return (
     <div className="mb-40">

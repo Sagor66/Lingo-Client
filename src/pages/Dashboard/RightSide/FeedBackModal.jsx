@@ -14,7 +14,7 @@ const FeedBackModal = ({ item, onFeedBackButtonClick }) => {
 
   const onSubmit = (data) => {
     axios
-    .patch(`http://localhost:5000/new-classes/feedback/${item._id}`)
+    .patch(`https://b7a12-summer-camp-server-side-sagor66.vercel.app/new-classes/feedback/${item._id}`)
     .then((data) => {
       console.log(data.data);
       if (data.data.modifiedCount > 0) {

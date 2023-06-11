@@ -28,7 +28,7 @@ const SelectedClasses = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          axios.delete(`http://localhost:5000/cart/${item._id}`)
+          axios.delete(`https://b7a12-summer-camp-server-side-sagor66.vercel.app/cart/${item._id}`)
           .then(data => {
             if (data.data.deletedCount > 0) {
               refetch()

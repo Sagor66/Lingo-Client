@@ -19,7 +19,7 @@ const AddClass = () => {
     data.status = "pending"
     data.total_students = 0
     axios
-      .post("http://localhost:5000/new-classes", data)
+      .post("https://b7a12-summer-camp-server-side-sagor66.vercel.app/new-classes", data)
       .then((data) => {
         console.log(data.data);
         if (data.data.insertedId) {

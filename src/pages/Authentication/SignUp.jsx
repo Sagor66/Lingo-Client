@@ -28,7 +28,7 @@ const SignUp = () => {
       console.log(loggedUser)
       updateUserProfile(data.name, data.photo)
       .then(() => {
-        fetch('http://localhost:5000/users', {
+        fetch('https://b7a12-summer-camp-server-side-sagor66.vercel.app/users', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

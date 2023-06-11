@@ -32,7 +32,7 @@ const ClassCard = ({ classCard }) => {
         email: user.email,
       };
       cartItem.email = user.email;
-      fetch("http://localhost:5000/cart", {
+      fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/cart", {
         method: "POST",
         headers: {
           "content-type": "application/json",

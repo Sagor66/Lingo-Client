@@ -27,7 +27,7 @@ const ManageClasses = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          axios.patch(`http://localhost:5000/new-classes/approved/${item._id}`)
+          axios.patch(`https://b7a12-summer-camp-server-side-sagor66.vercel.app/new-classes/approved/${item._id}`)
           .then(data => {
             console.log(data.data)
             if (data.data.modifiedCount > 0) {
@@ -62,7 +62,7 @@ const ManageClasses = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          axios.patch(`http://localhost:5000/new-classes/deny/${item._id}`)
+          axios.patch(`https://b7a12-summer-camp-server-side-sagor66.vercel.app/new-classes/deny/${item._id}`)
           .then(data => {
             console.log(data.data)
             if (data.data.modifiedCount > 0) {
