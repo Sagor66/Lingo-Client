@@ -79,6 +79,10 @@ const ManageClasses = () => {
       });
   };
 
+  const handleFeedbackButtonClick = (item) => {
+    console.log(item.id)
+  }
+
   return (
     <div>
       <div className="mt-10">
@@ -134,7 +138,7 @@ const ManageClasses = () => {
                     <button onClick={() => handleDenyButton(item)} className="btn bg-red-200 text-red-700 btn-xs">
                       Deny
                     </button>
-                    <FeedBackModal item={item}></FeedBackModal>
+                    <FeedBackModal item={item} onFeedBackButtonClick={handleFeedbackButtonClick}></FeedBackModal>
                   </th>
                 </tr>
               ))}

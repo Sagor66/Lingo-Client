@@ -2,7 +2,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { RxCross2 } from "react-icons/rx";
 
-const FeedBackModal = ({ item }) => {
+const FeedBackModal = ({ item, onFeedBackButtonClick }) => {
   const {
     register,
     handleSubmit,
@@ -10,7 +10,7 @@ const FeedBackModal = ({ item }) => {
     formState: { errors },
   } = useForm();
 
-  console.log(item)
+  // console.log(item._id)
 
   const onSubmit = (data) => {
     axios
@@ -27,6 +27,7 @@ const FeedBackModal = ({ item }) => {
   };
 
   const openModal = () => {
+    onFeedBackButtonClick(item)
     const modal = document.getElementById("my_modal_1");
     modal.showModal();
   };
