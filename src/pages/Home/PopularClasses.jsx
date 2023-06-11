@@ -6,6 +6,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Autoplay, FreeMode, Pagination } from "swiper";
 import SectionHeader from "../../components/SectionHeader";
+import { Link } from "react-router-dom";
 
 const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
@@ -14,7 +15,7 @@ const PopularClasses = () => {
     fetch("http://localhost:5000/classes-sort")
       .then((res) => res.json())
       .then((data) => {
-        setClasses(data)
+        setClasses(data);
       });
   }, []);
 
@@ -44,7 +45,11 @@ const PopularClasses = () => {
               {
                 <div className="flex flex-col items-center">
                   <div className="relative">
-                    <img className="w-96 h-96 object-cover border-4 rounded-full border-yellow-300" src={classItem.image} alt="" />
+                    <img
+                      className="w-96 h-96 object-cover border-4 rounded-full border-yellow-300"
+                      src={classItem.image}
+                      alt=""
+                    />
                     <div className="absolute bottom-0">
                       <h4 className="font-nunito text-3xl font-extrabold bg-gradient-to-r from-yellow-400 to-white px-3 py-1">
                         {classItem.class_name}
@@ -60,16 +65,11 @@ const PopularClasses = () => {
                       Enrolled: {classItem.total_students}
                     </p>
                   </div>
-                  <button
-                    disabled={classItem.available_seats === 0}
-                    className={`rounded-xl w-3/4 mt-6 ${
-                      classItem.available_seats === 0
-                        ? "px-12 py-3 bg-gray-200"
-                        : "btn-primary"
-                    }`}
-                  >
-                    Select
-                  </button>
+                  <Link to="/classes">
+                    <button className={"rounded-xl w-full mt-6 btn-primary"}>
+                      More info
+                    </button>
+                  </Link>
                 </div>
               }
             </div>

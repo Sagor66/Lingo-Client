@@ -1,7 +1,10 @@
+import { toast } from "react-hot-toast";
 import useAuth from "../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
 const ClassCard = ({ classCard }) => {
   const { user } = useAuth();
+  const navigate = useNavigate()
 
   const {
     _id,
@@ -43,7 +46,8 @@ const ClassCard = ({ classCard }) => {
           }
         });
     } else {
-      console.log('please login')
+      toast.error("Please Login To Enroll")
+      navigate('/login')
     }
   };
 

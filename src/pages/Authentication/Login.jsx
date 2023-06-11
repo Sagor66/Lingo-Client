@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
+import { toast } from "react-hot-toast";
 
 const Login = () => {
   const {
@@ -11,6 +12,13 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const from = location.state?.from?.pathname || '/'
+
+  console.log(from)
+
   const { signInUser } = useAuth();
 
   const onSubmit = (data) => {
@@ -18,7 +26,9 @@ const Login = () => {
     signInUser(data.email, data.password)
     .then(result => {
       const user = result.user
+      toast.success('Successfully Logged in!')
       console.log(user)
+      navigate(from, { replace: true })
     })
     .catch(error => console.log(error))
   };

@@ -1,31 +1,33 @@
 import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
 import useAuth from "../../hooks/useAuth";
+import ActiveRoute from "../../routes/ActiveRoute";
 
 const NavBar = () => {
-
-  const { user, logOut } = useAuth()
+  const { user, logOut } = useAuth();
 
   const handleLogOut = () => {
     logOut()
-    .then(() => {})
-    .catch(error => console.log(error.message))
-  }
+      .then(() => {})
+      .catch((error) => console.log(error.message));
+  };
 
   const navOptions = (
     <>
       <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
-        <Link to="/">Home</Link>
+        <ActiveRoute to="/">Home</ActiveRoute>
       </li>
       <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
-        <Link to="/instructors">Instructors</Link>
+        <ActiveRoute to="/instructors">Instructors</ActiveRoute>
       </li>
       <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
-        <Link to="/classes">Classes</Link>
+        <ActiveRoute to="/classes">Classes</ActiveRoute>
       </li>
-      <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
-        <Link to="/dashboard">Dashboard</Link>
-      </li>
+      {user && (
+        <li className="text-xl font-nunito font-extrabold mr-7 hover:text-orange-500">
+          <ActiveRoute to="/dashboard">Dashboard</ActiveRoute>
+        </li>
+      )}
     </>
   );
 
@@ -63,13 +65,15 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          {
-            user ? 
-            <button onClick={() => handleLogOut()} className="btn-primary">Logout</button>
-          : <Link to="/login">
-            <button className="btn-primary">Login</button>
-          </Link>
-          }
+          {user ? (
+            <button onClick={() => handleLogOut()} className="btn-primary">
+              Logout
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn-primary">Login</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

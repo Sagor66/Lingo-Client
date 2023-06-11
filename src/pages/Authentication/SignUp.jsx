@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
+import { toast } from "react-hot-toast";
 
 const SignUp = () => {
   const {
@@ -12,12 +13,18 @@ const SignUp = () => {
 
   const { createUser, updateUserProfile } = useAuth()
 
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const from = location?.state?.from.pathname || '/'
+
   const onSubmit = (data) => {
     data.role = "student"
     console.log(data)
     createUser(data.email, data.password)
     .then(result => {
       const loggedUser = result.user
+      toast.success('Successfully Signed Up!')
       console.log(loggedUser)
       updateUserProfile(data.name, data.photo)
       .then(() => {
@@ -34,6 +41,9 @@ const SignUp = () => {
             console.log()
           }
         })
+        toast.success('Successfully Updated!')
+        reset()
+        navigate(from, { replace: true })
       })
     })
     .catch(error => console.log(error.message))

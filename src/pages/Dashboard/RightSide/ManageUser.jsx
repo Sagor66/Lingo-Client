@@ -127,9 +127,10 @@ const ManageUser = () => {
                 <td className="text-center">{item.phone}</td>
                 <td>{item.role}</td>
                 <th>
-                  <button onClick={() => handleMakeAdmin(item)} className="btn bg-green-300 btn-xs mr-4">Make Admin</button>
+                  <button onClick={() => handleMakeAdmin(item)} disabled={item.role === 'admin'} className="btn bg-green-300 btn-xs mr-4">Make Admin</button>
                   <button
                     onClick={() => handleMakeInstructor(item)}
+                    disabled={item.role === 'instructor'}
                     className="btn bg-blue-300 text-blue-700 btn-xs"
                   >
                     Make Instructor
