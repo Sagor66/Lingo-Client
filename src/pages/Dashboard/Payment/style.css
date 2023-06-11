@@ -1,0 +1,9 @@
+form {
+  width: 500px;
+}
+
+.StripeElement {
+  border: solid 2px gray;
+  padding: 10px;
+  border-radius: 10px;
+}

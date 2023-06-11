@@ -2,10 +2,10 @@ import Swal from "sweetalert2";
 import SectionHeader from "../../../components/SectionHeader";
 import useCart from "../../../hooks/useCart";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const SelectedClasses = () => {
   const [cart, refetch] = useCart();
-  console.log(cart);
 
   const handleDeleteButton = (item) => {
     const swalWithBootstrapButtons = Swal.mixin({
@@ -88,7 +88,7 @@ const SelectedClasses = () => {
                 <td className="text-center">{item.available_seats}</td>
                 <td>${item.price}</td>
                 <th>
-                  <button className="btn bg-green-300 btn-xs mr-4">Pay</button>
+                  <Link to={`/dashboard/payment/${item._id}`}><button className="btn bg-green-300 btn-xs mr-4">Pay</button></Link>
                   <button
                     onClick={() => handleDeleteButton(item)}
                     className="btn bg-red-200 text-red-700 btn-xs"
