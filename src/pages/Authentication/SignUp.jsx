@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
 
 const SignUp = () => {
   const {
@@ -11,6 +12,8 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
 
+  const [error, setError] = useState("");
+
   const { createUser, updateUserProfile } = useAuth()
 
   const navigate = useNavigate()
@@ -19,6 +22,7 @@ const SignUp = () => {
   const from = location?.state?.from.pathname || '/'
 
   const onSubmit = (data) => {
+    setError("");
     data.role = "student"
     console.log(data)
     createUser(data.email, data.password)
@@ -46,7 +50,16 @@ const SignUp = () => {
         navigate(from, { replace: true })
       })
     })
-    .catch(error => console.log(error.message))
+    .catch(error => {
+      if (data.password.length < 6) {
+        setError(
+          `Pass too short! Minimum 6 characters needed \n${error.message}`
+        );
+      } else {
+        setError(error.message);
+      }
+      console.log(error.message);
+    })
   };
   // console.log(errors);
 
@@ -150,6 +163,7 @@ const SignUp = () => {
             <div className="form-control my-8">
               <input className="btn-primary" type="submit" value="Sign Up" />
             </div>
+            <p className="text-sm text-red-600 max-w-sm mb-2">{error}</p>
             <div className="label-text-alt">
               <p className="inline-block mr-2">Already have an account?</p>
               <Link to='/login' className="text-orange-500">Login</Link>
