@@ -42,8 +42,8 @@ const Banner = () => {
               src={banner1}
               alt=""
             />
-            <div className="absolute top-1/4 lg:top-44 lg:left-32">
-              <h1 className="font-nunito text-left text-black text-3xl lg:text-7xl font-extrabold leading-snug">
+            <div className="absolute top-0 lg:top-44 lg:left-32">
+              <h1 className="font-nunito text-left text-black text-7xl font-extrabold leading-snug">
                 Learn from{" "}
                 <span className="text-white bg-gradient-to-r from-orange-500 to-yellow-500 px-3">
                   native speakers
@@ -68,8 +68,8 @@ const Banner = () => {
               src={banner2}
               alt=""
             />
-            <div className="absolute top-1/4 lg:top-44 lg:right-32">
-              <h1 className="font-nunito text-left text-white text-3xl lg:text-7xl font-extrabold leading-snug">
+            <div className="absolute top-0 lg:top-44 lg:right-32">
+              <h1 className="font-nunito text-left text-white text-7xl font-extrabold leading-snug">
                 With Our{" "}
                 <span className="text-white bg-gradient-to-l from-orange-500 to-yellow-500 px-3">
                   World Class
@@ -90,8 +90,8 @@ const Banner = () => {
               src={banner3}
               alt=""
             />
-            <div className="absolute top-1/3 lg:right-1/4">
-              <h1 className="font-nunito text-left text-white text-3xl lg:text-7xl font-extrabold leading-snug">
+            <div className="absolute top-0 lg:top-1/3 lg:right-1/4">
+              <h1 className="font-nunito text-left text-white text-7xl font-extrabold leading-snug">
                 And{" "}
                 <span className="text-white bg-gradient-to-l from-orange-500 to-yellow-500 px-3">
                   Top Notch

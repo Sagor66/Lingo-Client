@@ -14,7 +14,7 @@ const Instructors = () => {
   }, [])
 
   return (
-    <div className="px-2">
+    <div>
       <Helmet>
         <title>Lingo | Instructors</title>
       </Helmet>

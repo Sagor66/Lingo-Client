@@ -5,6 +5,7 @@ import ActiveRoute from "../../routes/ActiveRoute";
 
 const NavBar = () => {
   const { user, logOut } = useAuth();
+  console.log(user);
 
   const handleLogOut = () => {
     logOut()
@@ -66,9 +67,12 @@ const NavBar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <button onClick={() => handleLogOut()} className="btn-primary">
-              Logout
-            </button>
+            <div className="flex flex-col lg:flex-row items-center gap-4">
+              <img className="w-12 h-12 object-cover object-top rounded-full border-2 border-white" src={user.photoURL} alt="" />
+              <button onClick={() => handleLogOut()} className="btn-primary">
+                Logout
+              </button>
+            </div>
           ) : (
             <Link to="/login">
               <button className="btn-primary">Login</button>

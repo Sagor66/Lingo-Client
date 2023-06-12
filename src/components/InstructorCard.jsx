@@ -5,7 +5,7 @@ const InstructorCard = ({ instructorCard }) => {
   const { name, image, email, classes_taken, class_names } = instructorCard
 
   return (
-    <div className="shadow-2xl bg-gradient-to-br from-yellow-400 to-orange-400 relative pb-20 rounded-lg hover:scale-110 transition-all">
+    <div className="shadow-2xl bg-gradient-to-br from-yellow-400 to-orange-400 relative pb-20 rounded-lg hover:scale-110 transition-all mx-2">
       <img className="w-96 h-96 object-cover rounded-lg" src={image} alt="" />
       <div className="px-4">
         <h4 className="font-nunito text-2xl font-extrabold my-4">{name}</h4>
