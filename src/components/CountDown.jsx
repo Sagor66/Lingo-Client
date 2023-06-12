@@ -41,8 +41,8 @@ const CountDown = ({ targetDate }) => {
   }, []);
 
   return (
-    <div className="w-full mx-auto font-nunito font-bold text-5xl">
-      <div className="flex gap-4 justify-center items-center pt-16">
+    <div className="w-full mx-auto font-nunito font-bold lg:text-5xl">
+      <div className="flex flex-col lg:flex-row lg:gap-4 justify-center items-center lg:pt-16 pt-4">
         <div className="text-center bg-black p-4 rounded-xl text-white">
           <div>{remainingTime.days}</div>
           <div>Days</div>

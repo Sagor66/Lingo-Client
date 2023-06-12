@@ -66,7 +66,7 @@ const PopularInstructors = () => {
   return (
     <div className="max-w-7xl mx-auto mb-40">
       <SectionHeader sectionHeader={"Top Instructors"}></SectionHeader>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 gap-10 mx-2">
         {instructors.map((instructor, i) => (
           <div key={i} className="flex shadow-2xl relative rounded-lg hover:scale-110 transition-all">
             <img

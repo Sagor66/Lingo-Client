@@ -12,11 +12,30 @@ const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
-    fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes-sort")
+    fetch(
+      "https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes-sort"
+    )
       .then((res) => res.json())
       .then((data) => {
         setClasses(data);
       });
+  }, []);
+
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 640;
+      setSlidesPerView(isMobile ? 1 : 3);
+    };
+
+    handleResize(); // Set initial slidesPerView on component mount
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   // console.log(classes);
@@ -25,7 +44,7 @@ const PopularClasses = () => {
     <div className="max-w-7xl mx-auto mb-40">
       <SectionHeader sectionHeader={"Popular classes"}></SectionHeader>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         freeMode={true}
         // pagination={{
