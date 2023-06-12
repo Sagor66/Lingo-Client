@@ -13,6 +13,7 @@ import ManageClasses from "../pages/Dashboard/RightSide/ManageClasses";
 import ManageUser from "../pages/Dashboard/RightSide/ManageUser";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
   {
@@ -59,11 +60,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'manage-classes',
-        element: <ManageClasses></ManageClasses>
+        element: <AdminRoute><ManageClasses></ManageClasses></AdminRoute>
       },
       {
         path: 'manage-users',
-        element: <ManageUser></ManageUser>
+        element: <AdminRoute><ManageUser></ManageUser></AdminRoute>
       },
       {
         path: 'payment/:id',
