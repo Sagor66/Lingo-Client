@@ -3,19 +3,18 @@ import ClassCard from "../../components/ClassCard";
 import CommonBanner from "../../components/CommonBanner";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import useClassesAll from "../../hooks/useClassesAll";
 
 const Classes = () => {
-  const [newClasses, refetch] = useClassesAll();
-
-  // const [classes, setClasses] = useState([]);
+  const [classes, setClasses] = useState([]);
   
 
-  // useEffect(() => {
-  //   fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes")
-  //     .then((res) => res.json())
-  //     .then((data) => setClasses(data));
-  // }, []);
+  useEffect(() => {
+    fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/new-classes/all-approved")
+      .then((res) => res.json())
+      .then((data) => setClasses(data));
+  }, []);
+
+  console.log(classes)
   
   // const handleSelectButton = (id) => {
   //   fetch(`https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes/${id}`, {
@@ -37,8 +36,8 @@ const Classes = () => {
       </Helmet>
       <CommonBanner headText={"Our Classes"}></CommonBanner>
       <div className="grid lg:grid-cols-3 justify-items-center mb-32 gap-10 max-w-7xl mx-auto">
-        {newClasses.map((classCard, i) => (
-          classCard.status === 'approved' ? <ClassCard key={i} classCard={classCard}></ClassCard> : ""
+        {classes.map((classCard, i) => (
+          <ClassCard key={i} classCard={classCard}></ClassCard>
         ))}
       </div>
     </div>

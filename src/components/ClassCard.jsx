@@ -47,7 +47,7 @@ const ClassCard = ({ classCard }) => {
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
-            console.log("added successfully");
+            toast.success('Class Selected')
           }
         });
     } else {
