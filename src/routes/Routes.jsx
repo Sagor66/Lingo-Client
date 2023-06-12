@@ -15,6 +15,7 @@ import Payment from "../pages/Dashboard/Payment/Payment";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import InstructorRoute from "./InstructorRoute";
 
 export const router = createBrowserRouter([
   {
@@ -55,11 +56,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'add-class',
-        element: <AddClass></AddClass>
+        element: <InstructorRoute><AddClass></AddClass></InstructorRoute>
       },
       {
         path: 'my-classes',
-        element: <MyClasses></MyClasses>
+        element: <InstructorRoute><MyClasses></MyClasses></InstructorRoute>
       },
       {
         path: 'manage-classes',

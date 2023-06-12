@@ -1,10 +1,15 @@
 import { toast } from "react-hot-toast";
 import useAuth from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
+import useInstructor from "../hooks/useInstructor";
+import useAdmin from "../hooks/useAdmin";
 
 const ClassCard = ({ classCard }) => {
   const { user } = useAuth();
   const navigate = useNavigate()
+
+  const [ isAdmin ] = useAdmin()
+  const [ isInstructor ] = useInstructor()
 
   const {
     _id,
@@ -90,9 +95,9 @@ const ClassCard = ({ classCard }) => {
         </div>
         <button
           onClick={() => handleSelectButton(classCard)}
-          disabled={available_seats === 0}
+          disabled={available_seats === 0 || isAdmin || isInstructor}
           className={`rounded-xl w-full mt-6 ${
-            available_seats === 0 ? "px-12 py-3 bg-gray-200" : "btn-primary"
+            (available_seats === 0 || isAdmin || isInstructor) ? "px-12 py-3 bg-gray-200" : "btn-primary"
           }`}
         >
           Select

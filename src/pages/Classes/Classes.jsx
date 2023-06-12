@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
+  
 
   useEffect(() => {
     fetch("https://b7a12-summer-camp-server-side-sagor66.vercel.app/classes")
