@@ -24,9 +24,15 @@ const Student = () => {
         </Link>
       </li>
       <li>
-        <Link>
+        <Link to='/dashboard/enrolled-classes'>
           <BiSelectMultiple></BiSelectMultiple>
           Enrolled Classes
+        </Link>
+      </li>
+      <li>
+        <Link to='/dashboard/payment-history'>
+          <BiSelectMultiple></BiSelectMultiple>
+          Payment History
         </Link>
       </li>
       <DashboardCommon></DashboardCommon>      

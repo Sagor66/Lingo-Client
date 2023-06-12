@@ -83,6 +83,7 @@ const CheckoutForm = ({ cart }) => {
         cartItems: cart._id,
         status: "pending",
         itemNames: cart.class_name,
+        item: [cart],
       };
       axiosSecure.post("/payments", payment).then((res) => {
         console.log(res.data);
