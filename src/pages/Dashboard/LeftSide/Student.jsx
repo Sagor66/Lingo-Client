@@ -3,6 +3,7 @@ import { AiOutlineSelect } from "react-icons/ai";
 import { BiSelectMultiple } from "react-icons/bi";
 import DashboardCommon from "../../../components/DashboardCommon";
 import { TbHomeCheck } from "react-icons/tb";
+import { MdOutlinePayment } from "react-icons/md";
 
 
 const Student = () => {
@@ -31,7 +32,7 @@ const Student = () => {
       </li>
       <li>
         <Link to='/dashboard/payment-history'>
-          <BiSelectMultiple></BiSelectMultiple>
+          <MdOutlinePayment></MdOutlinePayment>
           Payment History
         </Link>
       </li>
