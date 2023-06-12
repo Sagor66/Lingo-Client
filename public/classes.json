@@ -5,7 +5,8 @@
       "instructor": "Maria Rodriguez",
       "total_students": 20,
       "available_seats": 5,
-      "price": 100
+      "price": 100,
+      "status": "pending"
   },
   {
       "class_name": "French Intermediate",
@@ -13,7 +14,8 @@
       "instructor": "Ahmed Khan",
       "total_students": 15,
       "available_seats": 10,
-      "price": 120
+      "price": 120,
+      "status": "pending"
   },
   {
       "class_name": "German Advanced",
@@ -21,7 +23,8 @@
       "instructor": "Hans Müller",
       "total_students": 12,
       "available_seats": 3,
-      "price": 150
+      "price": 150,
+      "status": "pending"
   },
   {
       "class_name": "Italian Conversational",
@@ -29,7 +32,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 7,
-      "price": 110
+      "price": 110,
+      "status": "pending"
   },
   {
       "class_name": "Japanese Beginners",
@@ -37,7 +41,8 @@
       "instructor": "Miguel Hernandez",
       "total_students": 25,
       "available_seats": 0,
-      "price": 95
+      "price": 95,
+      "status": "pending"
   },
   {
       "class_name": "Spanish Advanced",
@@ -45,7 +50,8 @@
       "instructor": "Carlos Garcia",
       "total_students": 10,
       "available_seats": 5,
-      "price": 130
+      "price": 130,
+      "status": "pending"
   },
   {
       "class_name": "French Beginners",
@@ -53,7 +59,8 @@
       "instructor": "Ivan Petrov",
       "total_students": 22,
       "available_seats": 3,
-      "price": 105
+      "price": 105,
+      "status": "pending"
   },
   {
       "class_name": "Italian Intermediate",
@@ -61,7 +68,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 16,
       "available_seats": 9,
-      "price": 125
+      "price": 125,
+      "status": "pending"
   },
   {
       "class_name": "Chinese Beginners",
@@ -69,7 +77,8 @@
       "instructor": "Li Wei",
       "total_students": 14,
       "available_seats": 6,
-      "price": 90
+      "price": 90,
+      "status": "pending"
   },
   {
       "class_name": "German Conversational",
@@ -77,7 +86,8 @@
       "instructor": "Hans Müller",
       "total_students": 10,
       "available_seats": 10,
-      "price": 115
+      "price": 115,
+      "status": "pending"
   },
   {
       "class_name": "Japanese Intermediate",
@@ -85,7 +95,8 @@
       "instructor": "Miguel Hernandez",
       "total_students": 8,
       "available_seats": 2,
-      "price": 135
+      "price": 135,
+      "status": "pending"
   },
   {
       "class_name": "Russian Beginners",
@@ -93,7 +104,8 @@
       "instructor": "Ivan Petrov",
       "total_students": 20,
       "available_seats": 4,
-      "price": 100
+      "price": 100,
+      "status": "pending"
   },
   {
       "class_name": "Spanish Intermediate",
@@ -101,7 +113,8 @@
       "instructor": "Carlos Garcia",
       "total_students": 12,
       "available_seats": 8,
-      "price": 120
+      "price": 120,
+      "status": "pending"
   },
   {
       "class_name": "French Advanced",
@@ -109,7 +122,8 @@
       "instructor": "Ivan Petrov",
       "total_students": 15,
       "available_seats": 5,
-      "price": 140
+      "price": 140,
+      "status": "pending"
   },
   {
       "class_name": "Italian Beginners",
@@ -117,7 +131,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 0,
-      "price": 95
+      "price": 95,
+      "status": "pending"
   },
   {
       "class_name": "Chinese Intermediate",
@@ -125,7 +140,8 @@
       "instructor": "Li Wei",
       "total_students": 10,
       "available_seats": 5,
-      "price": 130
+      "price": 130,
+      "status": "pending"
   },
   {
       "class_name": "Spanish Conversational",
@@ -133,7 +149,8 @@
       "instructor": "Sophie Lefebvre",
       "total_students": 12,
       "available_seats": 4,
-      "price": 110
+      "price": 110,
+      "status": "pending"
   },
   {
       "class_name": "German Beginners",
@@ -141,7 +158,8 @@
       "instructor": "Anna Schmidt",
       "total_students": 20,
       "available_seats": 3,
-      "price": 120
+      "price": 120,
+      "status": "pending"
   },
   {
       "class_name": "French Conversational",
@@ -149,7 +167,8 @@
       "instructor": "Jean-Luc Dubois",
       "total_students": 16,
       "available_seats": 8,
-      "price": 100
+      "price": 100,
+      "status": "pending"
   },
   {
       "class_name": "Italian Advanced",
@@ -157,7 +176,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 10,
       "available_seats": 2,
-      "price": 135
+      "price": 135,
+      "status": "pending"
   },
   {
       "class_name": "Japanese Advanced",
@@ -165,7 +185,8 @@
       "instructor": "Sophie Lefebvre",
       "total_students": 22,
       "available_seats": 6,
-      "price": 105
+      "price": 105,
+      "status": "pending"
   },
   {
       "class_name": "Arabic Intermediate",
@@ -173,7 +194,8 @@
       "instructor": "Carlos Garcia",
       "total_students": 18,
       "available_seats": 9,
-      "price": 125
+      "price": 125,
+      "status": "pending"
   },
   {
       "class_name": "German Advanced",
@@ -181,7 +203,8 @@
       "instructor": "Anna Schmidt",
       "total_students": 14,
       "available_seats": 5,
-      "price": 90
+      "price": 90,
+      "status": "pending"
   },
   {
       "class_name": "French Beginners",
@@ -189,7 +212,8 @@
       "instructor": "Jean-Luc Dubois",
       "total_students": 10,
       "available_seats": 10,
-      "price": 115
+      "price": 115,
+      "status": "pending"
   },
   {
       "class_name": "Indian Intermediate",
@@ -197,7 +221,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 8,
       "available_seats": 2,
-      "price": 135
+      "price": 135,
+      "status": "pending"
   },
   {
       "class_name": "Nepali Beginners",
@@ -205,7 +230,8 @@
       "instructor": "Li Wei",
       "total_students": 20,
       "available_seats": 4,
-      "price": 100
+      "price": 100,
+      "status": "pending"
   },
   {
       "class_name": "Arabic Advanced",
@@ -213,7 +239,8 @@
       "instructor": "Carlos Garcia",
       "total_students": 12,
       "available_seats": 8,
-      "price": 120
+      "price": 120,
+      "status": "pending"
   },
   {
       "class_name": "Latin Conversational",
@@ -221,7 +248,8 @@
       "instructor": "Jean-Luc Dubois",
       "total_students": 15,
       "available_seats": 5,
-      "price": 140
+      "price": 140,
+      "status": "pending"
   },
   {
       "class_name": "Indian Beginners",
@@ -229,7 +257,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 18,
       "available_seats": 7,
-      "price": 95
+      "price": 95,
+      "status": "pending"
   },
   {
       "class_name": "Nepali Intermediate",
@@ -237,7 +266,8 @@
       "instructor": "Li Wei",
       "total_students": 10,
       "available_seats": 5,
-      "price": 130
+      "price": 130,
+      "status": "pending"
   },
   {
       "class_name": "Spanish Conversational",
@@ -245,7 +275,8 @@
       "instructor": "Elena Petrova",
       "total_students": 12,
       "available_seats": 4,
-      "price": 110
+      "price": 110,
+      "status": "pending"
   },
   {
       "class_name": "German Beginners",
@@ -253,7 +284,8 @@
       "instructor": "Hans Müller",
       "total_students": 20,
       "available_seats": 3,
-      "price": 120
+      "price": 120,
+      "status": "pending"
   },
   {
       "class_name": "French Conversational",
@@ -261,7 +293,8 @@
       "instructor": "Ahmed Khan",
       "total_students": 16,
       "available_seats": 8,
-      "price": 100
+      "price": 100,
+      "status": "pending"
   },
   {
       "class_name": "Indian Advanced",
@@ -269,7 +302,8 @@
       "instructor": "Giulia Rossi",
       "total_students": 10,
       "available_seats": 2,
-      "price": 135
+      "price": 135,
+      "status": "pending"
   },
   {
       "class_name": "Japanese Advanced",
@@ -277,6 +311,7 @@
       "instructor": "Maria Rodriguez",
       "total_students": 22,
       "available_seats": 6,
-      "price": 105
+      "price": 105,
+      "status": "pending"
   }
 ]

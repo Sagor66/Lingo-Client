@@ -132,10 +132,10 @@ const ManageClasses = () => {
                   <td>${item.price}</td>
                   <td>{item.status}</td>
                   <th className="flex items-center justify-center gap-4">
-                    <button onClick={() => handleApproveButton(item)} className="btn bg-green-300 btn-xs">
+                    <button disabled={item.status === 'approved' || item.status === 'denied'} onClick={() => handleApproveButton(item)} className="btn bg-green-300 btn-xs">
                       Approve
                     </button>
-                    <button onClick={() => handleDenyButton(item)} className="btn bg-red-200 text-red-700 btn-xs">
+                    <button disabled={item.status === 'approved' || item.status === 'denied'} onClick={() => handleDenyButton(item)} className="btn bg-red-200 text-red-700 btn-xs">
                       Deny
                     </button>
                     <FeedBackModal item={item} onFeedBackButtonClick={handleFeedbackButtonClick}></FeedBackModal>
