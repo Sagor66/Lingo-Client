@@ -4,6 +4,9 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
+import { GrFormViewHide } from "react-icons/gr";
+import { BiShow } from 'react-icons/bi';
 
 const Login = () => {
   const {
@@ -12,27 +15,34 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const navigate = useNavigate()
-  const location = useLocation()
+  const [hidePass, setHidePass] = useState(true);
 
-  const from = location.state?.from?.pathname || '/'
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  console.log(from)
+  const from = location.state?.from?.pathname || "/";
+
+  console.log(from);
 
   const { signInUser } = useAuth();
 
   const onSubmit = (data) => {
-    console.log(data)
+    console.log(data);
     signInUser(data.email, data.password)
-    .then(result => {
-      const user = result.user
-      toast.success('Successfully Logged in!')
-      console.log(user)
-      navigate(from, { replace: true })
-    })
-    .catch(error => console.log(error))
+      .then((result) => {
+        const user = result.user;
+        toast.success("Successfully Logged in!");
+        console.log(user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => console.log(error));
   };
   // console.log(errors);
+
+  const handleHidePassword = () => {
+    setHidePass(!hidePass)
+    console.log(hidePass)
+  }
 
   return (
     <div className="py-40 min-h-screen relative bg-gradient-to-b from-yellow-400 to-white">
@@ -61,16 +71,23 @@ const Login = () => {
               {...register("email", { required: true })}
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
             <input
-              type="text"
+              type={hidePass ? "password" : "text"}
               placeholder="password"
               className="input input-bordered"
               {...register("password", { required: true })}
             />
+            <div className="text-2xl absolute right-3 bottom-2">
+              <button onClick={handleHidePassword}>
+                {
+                  hidePass ? <GrFormViewHide></GrFormViewHide> : <BiShow></BiShow>
+                }
+              </button>
+            </div>
           </div>
           <div className="form-control my-8">
             <input className="btn-primary" type="submit" value="Login" />
